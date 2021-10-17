@@ -1,0 +1,154 @@
+.header{
+    
+    //Barre de navigation
+    &__navbar{
+        padding: $headerPadding;
+        box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+        margin-bottom: 2px;
+        position: relative;
+
+        &--noShadow{
+            box-shadow: unset;
+            margin-bottom: unset;
+        }
+
+        &__logo{
+            display: block;
+            text-align: center;
+            &__img{
+                width: 25vw;
+                height: auto;
+
+                @media (max-width: map-get($max-large, 600)){
+                    width: 60vw;
+                }
+            }
+        }
+        //La flèche
+        &__arrow{
+            position: absolute;
+            top: 32px;
+            left: 35px;
+            transition: all;
+            font-size: 2em;
+            &:hover{
+                transform: scale(1.1);
+            }
+            @media (max-width: map-get($max-large, 1400)){
+                &{
+                    font-size: 1.5em;
+                }
+            }
+            @media (max-width: map-get($max-large, 1200)){
+                &{
+                    top: 28px;
+                    
+                }
+            }
+            @media (max-width: map-get($max-large, 1000)){
+                &{
+                    top: 24px;
+                    font-size: 1.4em;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 800)){
+                &{
+                    top: 21px;
+                    font-size: 1.2em;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 700)){
+                &{
+                    top: 20px;
+                    font-size: 1.2em;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 600)){
+                &{
+                    top: 29px;
+                    font-size: 2em;
+                    left: 30px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 533)){
+                &{
+                    top: 30px;
+                    font-size: 1.6em;
+                    left: 20px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 500)){
+                &{
+                    top: 28px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 450)){
+                &{
+                    top: 25px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 399)){
+                &{
+                    top: 22px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 360)){
+                &{
+                    top: 21px;
+                    font-size: 1.5em;
+                    left: 18px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 340)){
+                &{
+                    top: 19px;
+                
+                }
+            }
+            @media (max-width: map-get($max-large, 290)){
+                &{
+                    top: 16px;
+                    left: 10px;
+                
+                }
+            }
+            & a{
+                color: inherit;
+            }
+        }
+    }
+    
+
+    //Adresse du restaurant
+    &__address{
+        text-align: center;
+        padding: $headerPadding;
+        background-color: #e9e9e9;
+
+        &__text{
+            font-style: normal;
+            font-size: 1.6rem;
+            @media (max-width: map-get($max-large, 600)){
+                &{
+                    font-size: 1rem;
+                }
+            }
+            @media (max-width: map-get($max-large, 300)){
+                &{
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+    }
+    
+}

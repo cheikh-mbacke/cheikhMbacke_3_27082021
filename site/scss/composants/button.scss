@@ -1,0 +1,25 @@
+.btn{
+    text-decoration: none;
+    padding: 0.9em 1em;
+    border-radius: 40px;
+    border: 0;
+    color: $blanc;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 1px 4px 18px -4px $primaire;
+    background: linear-gradient(to top left, $primaire, $secondaire);
+    &:hover{
+        background: linear-gradient(to top left, lighten($primaire, 5%), lighten($secondaire, 5%));
+        box-shadow: 1px 4px 20px -10px $primaire; 
+    }
+    @media (max-width: map-get($max-large, 1000)) {
+        &{
+            font-size: 1.1rem;
+        }
+    }
+    @media (max-width: map-get($max-large, 400)) {
+        &{
+            font-size: 0.8rem;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+@function multiplier($width, $facteur){
+    $result: 100% - ($width * $facteur);
+    @return $result;
+}

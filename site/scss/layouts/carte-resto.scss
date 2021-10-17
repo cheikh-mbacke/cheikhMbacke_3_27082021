@@ -1,0 +1,190 @@
+.restaurants{
+    padding: 0 1em 3em 1em;
+    background-color: $fontGrisClair;
+
+    &__heading{
+        margin-left: 0.7em;
+        font-size: 1.6em;
+        @media (max-width: map-get($max-large, 600)){
+            font-size: 1.4em;          
+        }
+    }
+    &__cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        &__container{
+            padding: 0.8em;
+            @media (max-width: map-get($max-large, 533)){
+                margin: auto; 
+            }
+            &__item{
+                display: block;
+                text-decoration: none;
+                color: inherit;
+                background-color: $blanc;
+                width: 16em;
+                height: 14em;
+                box-shadow: -1px 11px 18px -7px rgb(150, 148, 148);
+                border-radius: 25px;
+                position: relative;
+                @media (max-width: 1479px){
+                    width: 15em;
+                    height: 13em;
+                }
+                @media (max-width: 1395px){
+                    width: 20em;
+                    height: 16em;
+                }
+                @media (max-width: 1069px){
+                    width: 18em;
+                    height: 15em; 
+                }
+                @media (max-width: 973px){
+                    width: 16em;
+                    height: 13em; 
+                }
+                @media (max-width: 876px){
+                    width: 20em;
+                    height: 16em; 
+                }
+                @media (max-width: 724px){
+                    width: 17em;
+                    height: 14em; 
+                }
+                @media (max-width: 627px){
+                    width: 16em;
+                    height: 14em; 
+                }
+                @media (max-width: 596px){
+                    width: 14em;
+                    height: 13em; 
+                }
+                @media (max-width: 533px){
+                    width: 20em;
+                    height: 16em; 
+                }
+                @media (max-width: 444px){
+                    width: 20em;
+                    height: 16em; 
+                }
+                @media (max-width: 368px){
+                    width: 18em;
+                    height: 14em; 
+                }
+                @media (max-width: 332px){
+                    width: 16em;
+                    height: 13em; 
+                }
+                @media (max-width: 298px){
+                    width: 15em;
+                    height: 13em; 
+                }
+                @media (max-width: 284px){
+                    width: 14em;
+                    height: 12em; 
+                }
+                
+                &__img{
+                    max-width: 100%;
+                    border-radius: 20px 20px 0 0;
+                }
+                &__badge{
+                    border-radius: 0.2em;
+                    position: absolute;
+                    top: 1em;
+                    right: 1em;
+                    color: green;
+                    padding: 0.4em 0.8em;
+                    background-color: #87f0d2;
+                    @media (max-width: 284px){
+                        font-size: 0.9em;
+                    } 
+                }
+                &__body{
+                    
+                    padding: 0.8em 0.8em 0.8em 0.8em;
+                    &__element:first-child{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+                     }
+                     &__element{
+                         &__heart{
+                            position: relative;
+                            padding-right: 1em;
+                            margin: 0;
+                            &__left{
+                                width: 18px;
+                                height: 18px;
+                                border: 0.1px solid $noir;
+                                border-radius: 50%;
+                            }
+                            &__right{
+                                position: absolute;
+                                top: 0;
+                                left: 10px;
+                                width: 18px;
+                                height: 18px;
+                                border: 0.1px solid $noir;
+                                border-radius: 50%;
+                            }
+                            &__bottom{
+                                position: absolute;
+                                top: 5px;
+                                left: 5px;
+                                transform: rotate(45deg);
+                                width: 18px;
+                                height: 18px;
+                                border: 0.1px solid $noir;
+                                background-color: $blanc;
+                            }
+                            &__center{
+                                position: absolute;
+                                top: 2px;
+                                left: 1px;
+                                width: 28px;
+                                height: 16px;
+                                border-radius: 20px;
+                                background-color: $blanc;
+                            }
+                            &:hover > &__center{
+                                background: linear-gradient(to right top, $secondaire, $primaire);
+                                display: none;
+                            }
+                            &:hover > &__bottom{
+                                background: linear-gradient(to left top, $secondaire, $primaire, $primaire);
+                                border: 0;
+                            }
+                            &:hover > &__left{
+                                // background: linear-gradient(to left top, $secondaire, $primaire);
+                                background: linear-gradient(to left top, $primaire, $primaire);
+                                border: 0
+                            }
+                            &:hover > &__right{
+                                // background: linear-gradient(to left top, $secondaire, $primaire);
+                                background: linear-gradient(to left top, $primaire, $primaire);
+
+                                border: 0;
+                            }
+                                 
+                         }
+                         &__title{
+                            margin: 0;
+                            @media (max-width: 284px){
+                                font-size: 1em;
+                            }
+                            @media (max-width: 596px){
+                                font-size: 1.1em;  
+                            }     
+                         }
+                         &__text{
+                             padding-top: 0.4em;
+                             margin: 0;
+                         }
+                     }
+                }
+            }
+        }
+    }
+}

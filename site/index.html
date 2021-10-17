@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>OhMyFood</title>
+</head>
+<body>
+    <div>
+        <div id="lds-hourglass"></div>
+    </div>
+    <header class="header" id="headerAcceuil">
+        <nav class="header__navbar">
+            <a href="./index.html" class="header__navbar__logo">
+                <img class="header__navbar__logo__img"
+                    src="./public/img/logo/ohmyfood@2x.svg"
+                    alt="logo ohmyfood"
+                />
+            </a>
+        </nav>
+        <div class="header__address">
+            <address>
+                <i class="fas fa-map-marker-alt"></i>
+                &ensp;<span class="header__address__text">Paris, Belleville</span>
+            </address>
+        </div>
+    </header>
+    <main id="mainAcceuil">
+        <article class="hero">
+            <h1 class="hero__heading">Réservez le menu qui vous convient</h1>
+            <p class="hero__text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <a href="#restaurants" class="btn">Explorez nos restaurants</a>
+        </article>
+        <div class="container">
+            <aside class="menu">
+                <h1 class="menu__heading">Fonctionnement</h1>
+                <div class="menu__items">
+                    
+                    <a href="#" class="menu__items__container">
+                        <div class="menu__items__container__item">
+                            <span class="menu__items__container__item__number">1</span>
+                            <p class="menu__items__container__item__icon"><i class="fas fa-mobile-alt"></i></p>
+                            <p class="menu__items__container__item__text">Choisissez un restaurant</p>
+                        </div>
+                    </a>
+                    <a href="#" class="menu__items__container">
+                        <div class="menu__items__container__item">
+                            <span class="menu__items__container__item__number">2</span>
+                            <p class="menu__items__container__item__icon"><i class="fas fa-list-ul"></i></p>
+                            <p class="menu__items__container__item__text">Composez votre menu</p>
+                        </div>
+                    </a>
+                    <a href="#" class="menu__items__container">
+                        <div class="menu__items__container__item">
+                            <span class="menu__items__container__item__number">3</span>
+                            <p class="menu__items__container__item__icon"><i class="fas fa-store"></i></p>
+                            <p class="menu__items__container__item__text">Dégustez au restaurant</p>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+            <article id="restaurants" class="restaurants">
+                <h1 class="restaurants__heading">Restaurants</h1>
+                <div class="restaurants__cards">
+    
+                    <div class="restaurants__cards__container">
+                        <a href="./public/restaurants/la_palette_du_gout/la_palette_du_gout.html" class="restaurants__cards__container__item">
+                            <img class="restaurants__cards__container__item__img" src="./public/img/restaurants/menilmontant.jpg" alt="photo plat">
+                            <span class="restaurants__cards__container__item__badge">Nouveau</span>
+                            <div class="restaurants__cards__container__item__body">
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <h3 class="restaurants__cards__container__item__body__element__title">La palette du goût</h3>
+                                    <div class="restaurants__cards__container__item__body__element__heart">
+                                        <div class="main__items__item__like main__items__item__like--padding">
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation1 fas fa-heart"></i>
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation2 far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <p class="restaurants__cards__container__item__body__element__text">Ménilmontant</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="restaurants__cards__container">
+                        <a href="public/restaurants/la_note_enchantee/la_note_enchantee.html" class="restaurants__cards__container__item">
+                            <img class="restaurants__cards__container__item__img" src="./public/img/restaurants/charonne.jpg" alt="photo plat">
+                            <span class="restaurants__cards__container__item__badge">Nouveau</span>
+                            <div class="restaurants__cards__container__item__body">
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <h3 class="restaurants__cards__container__item__body__element__title">La note enchantée</h3>
+                                    <div class="restaurants__cards__container__item__body__element__heart">
+                                        <div class="main__items__item__like main__items__item__like--padding">
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation1 fas fa-heart"></i>
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation2 far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <p class="restaurants__cards__container__item__body__element__text">Charonne</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="restaurants__cards__container">
+                        <a href="./public/restaurants/a_la_francaise/a_la_francaise.html" class="restaurants__cards__container__item">
+                            <img class="restaurants__cards__container__item__img" src="./public/img/restaurants/citerouge.jpg" alt="photo plat">
+                            <div class="restaurants__cards__container__item__body">
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <h3 class="restaurants__cards__container__item__body__element__title">À la française</h3>
+                                    <div class="restaurants__cards__container__item__body__element__heart">
+                                        <div class="main__items__item__like main__items__item__like--padding">
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation1 fas fa-heart"></i>
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation2 far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <p class="restaurants__cards__container__item__body__element__text">Cité Rouge</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="restaurants__cards__container">
+                        <a href="./public/restaurants/le_delice_des_sens/le_delice_des_sens.html" class="restaurants__cards__container__item">
+                            <img class="restaurants__cards__container__item__img" src="./public/img/restaurants/foliemericourt.jpg" alt="photo plat">
+                            <div class="restaurants__cards__container__item__body">
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <h3 class="restaurants__cards__container__item__body__element__title">Le délice des sens</h3>
+                                    <div class="restaurants__cards__container__item__body__element__heart">
+                                        <div class="main__items__item__like main__items__item__like--padding">
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation1 fas fa-heart"></i>
+                                            <i class="main__items__item__like__heart main__items__item__like__heart--animation2 far fa-heart"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="restaurants__cards__container__item__body__element">
+                                    <p class="restaurants__cards__container__item__body__element__text">Folie-Méricourt</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer id="footerAcceuil" class="footer">
+        <nav class="footer__nav">
+            <a href="./index.html" class="footer__nav__logo">ohmyfood</a>
+            <ul class="footer__list">
+                <li><a href="#"><i class="fas fa-utensils"></i>&ensp;Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>&ensp;Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:mbackecheikhouna7@gmail.com">Contact</a></li>
+            </ul>
+        </nav>  
+    </footer>
+
+</body>
+</html>

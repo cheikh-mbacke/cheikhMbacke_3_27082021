@@ -1,0 +1,64 @@
+.hero{
+    padding: 1em 1em 3em 1em;
+    text-align: center;
+    background-color: $fontGrisClair;
+    margin-bottom: 2em;
+    &__heading{
+        font-size: 3rem;
+        @media (max-width: 1000px) {
+            &{
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: $maxLarge-600) {
+            &{
+                font-size: 1.7rem;
+            }
+        }
+        @media (max-width: $maxLarge-400) {
+            &{
+                font-size: 1.3rem;
+            }
+        }
+    }
+    &__text{
+       margin-bottom: 2em;
+       font-size: 2rem;
+       @media (max-width: 1000px) {
+        &{
+            font-size: 1.3rem;
+        }
+    }
+       @media (max-width: map-get($max-large, 600)) {
+            &{
+                font-size: $tailleTexte-1;
+            }
+        }
+        @media (max-width: map-get($max-large, 400)) {
+            &{
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    &__btn{
+        padding: 0.9em 1em;
+        border-radius: 40px;
+        border: 0;
+        color: $blanc;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 1px 4px 18px -4px $primaire;
+        background: linear-gradient(to top left, $primaire, $secondaire);
+        @media (max-width: map-get($max-large, 1000)) {
+            &{
+                font-size: 1.1rem;
+            }
+        }
+        @media (max-width: map-get($max-large, 400)) {
+            &{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

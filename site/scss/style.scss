@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/fonctions';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './base/typography';
+@import './composants/button';
+@import './composants/loaderSpinner';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/container';
+@import './layouts/menu';
+@import './layouts/carte-resto';
+@import './layouts/singleMain';
+@import './layouts/footer';
+/*
+@ import './pages...';
+@import './themes/...';
+*/

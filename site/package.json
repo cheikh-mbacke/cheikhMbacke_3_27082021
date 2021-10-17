@@ -1,0 +1,15 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation Développeur web Openclassrooms ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w ./scss/style.scss ./public/css/style.css"
+  },
+  "author": "Cheikh Mbacke",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.39.2"
+  }
+}
